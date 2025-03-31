@@ -1,1 +1,9 @@
-
+:root {
+    --background-color:#f0f0f0;
+    --text-color:#333;
+    --button-color:#007bff;     
+    --button-hover-color:#0056b3;
+    --input-border-color:#ccc;
+    --input-focus-border-color:#007bff;
+    --input-background-color:#fff;
+}

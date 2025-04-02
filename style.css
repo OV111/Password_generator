@@ -7,3 +7,41 @@
     --input-focus-border-color:#007bff;
     --input-background-color:#fff;
 }
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    margin: 125px 500px;
+    border: 1px solid  var(--input-border-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    outline: none;
+    box-shadow: 0 0 10px var(--input-focus-border-color);
+}
+
+.card-features {
+    display: grid;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 20px;
+}
+
+.progress-container {
+    width: 200px;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}

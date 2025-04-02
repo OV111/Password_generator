@@ -19,7 +19,7 @@
 
         <div class="card">
             <div class="password-display">
-                <span id="password">Generate a password</span>
+                <input type="text" id="password" placeholder="Generate a password">
                 <button id="copyBtn" class="copy-btn" title="Copy to clipboard">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
@@ -28,7 +28,29 @@
                 </button>        
             </div>
 
-            <checkbox>place</checkbox>
+            <div class="password-length">
+                <input type="range" name="length" id="passwordLength" min="4" max="32" value="12" oninput="">
+                <span id="lengthValue">12</span>
+            </div>
+
+            <div class="strength-container">
+                <label class="strength-label">Strength: <span id="strengthLabel">Medium</span></label>
+                <div class="progress-container">
+                    <div id="strengthBar" class="progress-bar" style="width: 50%; background-color: #eab308;"></div>
+                </div>
+            </div>
+
+
+            <div>                
+                <label for="uppercase">Uppercase Include</label>
+                <input type="checkbox" id="uppercase" name="myCheckbox" value="checked">
+                
+                <label for="nums">Include Numbers</label>
+                <input type="checkbox" id="numbers" name="myCheckbox" value="checked">
+
+                <label for="symbols">Include Symbols</label>
+            </div>
+
 
         <div class="card-footer">
             <button id="generateBtn">Generate Password</button>

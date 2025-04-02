@@ -7,7 +7,9 @@
     --input-focus-border-color:#007bff;
     --input-background-color:#fff;
 }
-
+body {
+    background-color: black;
+}
 .container {
     display: grid;
     justify-content: center;
@@ -15,11 +17,12 @@
     height: 400px;
     width: 400px;
     margin: 125px 500px;
-    border: 1px solid  var(--input-border-color);
+    outline: none;
+    border: none;
     border-radius: 8px;
     background-color: var(--background-color);
-    outline: none;
     box-shadow: 0 0 10px var(--input-focus-border-color);
+    animation: backgroundAnimation 4s infinite linear;
 }
 
 .card-features {
@@ -44,4 +47,23 @@
     width: 0%;
     border-radius: 5px;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+@keyframes backgroundAnimation {
+    0% {
+        box-shadow: 0 0 30px 10px #007bff;
+    }
+    25% {
+        box-shadow: 0 0 32px 10px #0056b3;
+    }
+    50% {
+        box-shadow: 0 0 35px 10px #013872;
+    }
+    75% {
+        box-shadow: 0 0 37px 10px #012246;
+    }
+    100% {
+        box-shadow: 0 0 40px 10px #022346;
+    }
 }

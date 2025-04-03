@@ -39,15 +39,43 @@ body {
     margin-bottom: 0px;
 }
 
-.card {
+.card-input {
     display: flex;
     justify-content: center;
     /* align-items: center; */
     /* width: 300px; */
+
 }
 #password{
     width: 300px;
     height: 30px;
+    border: none;
+    border-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#password::placeholder {
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color:var(--text-color);
+    font-weight: 530;
+}
+#password:focus {
+    outline: none;
+    border: 2px solid var(--input-focus-border-color);
+    box-shadow: 0 0 5px var(--input-focus-border-color);   
+}
+#copyBtn {
+    border: none;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;;
+    cursor: pointer;
+}
+#copyBtn:hover {
+    outline: none;
+    border: 2px solid var(--input-focus-border-color);
+    box-shadow: 0 0 5px var(--input-focus-border-color);   
 }
 
 

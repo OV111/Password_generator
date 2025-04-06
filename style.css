@@ -127,11 +127,19 @@ body {
     color: var(--text-color);
     cursor: pointer;
 }
+.card-features label:hover{
+    color: var(--button-hover-color);
+}
 .card-features input[type="checkbox"] {
     width: 16px;
     height: 16px;
     margin: 0 45px 0 90px;
     cursor: pointer;
+}
+.card-features input[type="checkbox"]:hover {
+    outline: none;
+    border: 2px solid var(--input-focus-border-color);
+    box-shadow: 0 0 10px var(--input-focus-border-color);   
 }
 #generateBtn {
     font-size: 20px;

@@ -103,7 +103,7 @@ body {
 }
 .progress-bar {  /* this is initial!*/
     height: 100%;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -133,6 +133,23 @@ body {
     margin: 0 45px 0 90px;
     cursor: pointer;
 }
+#generateBtn {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 0px 10px 90px;
+    border-radius: 6px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+    cursor: pointer;
+}
+#generateBtn:hover {
+   background-color: var(--button-hover-color);
+   transition: background-color 0.3s ease-in-out;
+   box-shadow: 0 0 5px var(--input-focus-border-color);
+}
+
 
 
 @keyframes backgroundAnimation {
@@ -151,4 +168,4 @@ body {
     100% {
       box-shadow: 0 0 10px 10px rgba(66, 153, 225, 0.4);
     }
-  }
+}

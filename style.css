@@ -37,8 +37,8 @@ body {
     text-align: start;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 0px;
+    margin-left: 20px;
 }
-
 .card-input {
     display: flex;
     justify-content: center;
@@ -74,28 +74,24 @@ body {
     border: 2px solid var(--input-focus-border-color);
     box-shadow: 0 0 5px var(--input-focus-border-color);   
 }
- 
 .password-length {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 #passwordLength {
     width: 310px;
 }
-
 .strength-container {
     display: grid;
     justify-content: center;
     align-items: center;
 }
-
 .progress-bar {
-    width: 50%; /* Adjust this percentage based on the strength level */
-    height: 20px; /* Adjust the height as needed */
-    background-color: green; /* Choose your desired color */
-    border-radius: 4px; /* Optional: Rounded corners */
+    width: 50%; 
+    height: 20px;
+    background-color: green;
+    border-radius: 4px; 
 }
 .progress-container {
     width: 325px;
@@ -123,7 +119,9 @@ body {
 .card-features label {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
+    width: 100%;
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color);
@@ -132,8 +130,7 @@ body {
 .card-features input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    
-    margin: 0 20px 0 100px;
+    margin: 0 45px 0 90px;
     cursor: pointer;
 }
 

@@ -42,9 +42,6 @@ body {
 .card-input {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* width: 300px; */
-
 }
 #password{
     width: 300px;
@@ -61,7 +58,7 @@ body {
     color:var(--text-color);
     font-weight: 530;
 }
-#password:focus {
+#password:hover {
     outline: none;
     border: 2px solid var(--input-focus-border-color);
     box-shadow: 0 0 5px var(--input-focus-border-color);   
@@ -77,32 +74,69 @@ body {
     border: 2px solid var(--input-focus-border-color);
     box-shadow: 0 0 5px var(--input-focus-border-color);   
 }
-
-
-
-.card-features {
-    display: grid;
-    /* flex-direction: column; */
+ 
+.password-length {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    padding: 20px;
+    
+}
+#passwordLength {
+    width: 310px;
 }
 
+.strength-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 50%; /* Adjust this percentage based on the strength level */
+    height: 20px; /* Adjust the height as needed */
+    background-color: green; /* Choose your desired color */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
 .progress-container {
-    width: 200px;
+    width: 325px;
     height: 8px;
     background-color: #ddd;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 5px;
 }
-.progress-bar {
+.progress-bar {  /* this is initial!*/
     height: 100%;
-    width: 0%;
+    width: 100%;
     border-radius: 5px;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
+.card-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+}
+.card-features label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.card-features input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    
+    margin: 0 20px 0 100px;
+    cursor: pointer;
+}
+
 
 @keyframes backgroundAnimation {
     0% {

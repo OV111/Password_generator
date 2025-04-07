@@ -9,6 +9,10 @@ const includeSymbols = document.getElementById("includeSymbols");
 
 const passwdLenValue = document.getElementById("lengthValue");
 
+generateBtn.addEventListener("click", () => {
+        let options = getOptions();
+        console.log(creatingString(options));
+});
 const updateLength = (value) => {
         document.getElementById("lengthValue").textContent = value;
         return value;
@@ -20,26 +24,15 @@ const getOptions = () => {
                 includeSymbols: includeSymbols.checked,
         };
 };
-let options = getOptions();
-
+// console.log(options.includeNumbers)
 const creatingString = (options) => {
-        let string = "";
-        if(options.includeUppercase) string += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        if(options.includeNumbers) string += "0123456789";
-        if(options.includeSymbols) string += "!@#$%^&*()_+-=[]{}|;:',.<>?";
+        let string = "abcdefghijklmnopqrstuvwxyz";
+        if(options.includeNumbers) {string += "0123456789";}
+        if(options.includeUppercase) {string += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";}
+        if(options.includeSymbols) {string += "!@#$%^&*()_+-=[]{}|;:',.<>?";}
         return string;
 };
-// console.log(creatingString(options));
-
-
-
-
 
 const generatePasswd = (length,pool) => {
         
 };
-generateBtn.addEventListener("click", () => {
-        console.log(passwdLenValue.textContent);     
-        getOptions();
-        console.log(creatingString(options));
-});

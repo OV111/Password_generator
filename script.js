@@ -1,7 +1,6 @@
 const copyBtn = document.getElementById("copyBtn");
 const generateBtn = document.getElementById("generateBtn");
 const passwordInput = document.getElementById("password");
-
 const strengthBar = document.getElementById("strengthBar");
 const strengthLabel = document.getElementById("strengthLabel");
 const includeUppercase = document.getElementById("includeUppercase");
@@ -9,6 +8,10 @@ const includeNumbers = document.getElementById("includeNumbers");
 const includeSymbols = document.getElementById("includeSymbols");
 const passwdLenValue = document.getElementById("lengthValue");
 
+copyBtn.addEventListener("click",() => {
+   navigator.clipboard.writeText(passwordInput.value);
+//    console.log("Works");     
+});
 const getOptions = () => {
         return {
                 includeNumbers: includeNumbers.checked,
@@ -33,7 +36,7 @@ const updateStrength = (options) => {
                 strengthBar.style.width = "100%";
                 strengthLabel.textContent = "Very High";
         }
-}
+};
 const creatingString = (options) => {
         let string = "abcdefghijklmnopqrstuvwxyz";
         if(options.includeNumbers) string += "0123456789";

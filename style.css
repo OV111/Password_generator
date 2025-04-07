@@ -157,9 +157,6 @@ body {
    transition: background-color 0.3s ease-in-out;
    box-shadow: 0 0 5px var(--input-focus-border-color);
 }
-
-
-
 @keyframes backgroundAnimation {
     0% {
       box-shadow: 0 0 10px 10px rgba(66, 153, 225, 0.4);

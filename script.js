@@ -2,6 +2,9 @@ const copyBtn = document.getElementById("copyBtn");
 const generateBtn = document.getElementById("generateBtn");
 const passwordInput = document.getElementById("password");
 
+const strengthBar = document.getElementById("strengthBar");
+console.log(strengthBar.style.width = "70%");
+
 const includeUppercase = document.getElementById("includeUppercase");
 const includeNumbers = document.getElementById("includeNumbers");
 const includeSymbols = document.getElementById("includeSymbols");

@@ -1,5 +1,5 @@
 :root {
-    --background-color:#f0f0f0;
+    --background-color:#e6e4e4;
     --text-color:#333;
     --button-color:#007bff;     
     --button-hover-color:#0056b3;
@@ -19,7 +19,7 @@ body {
     margin: 125px 500px;
     outline: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: var(--background-color);
     box-shadow: 0 0 10px var(--input-focus-border-color);
     animation: backgroundAnimation 4s infinite linear;
@@ -78,9 +78,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 #passwordLength {
-    width: 310px;
+    width: 295px;
+}
+#lengthValue {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+    text-align: center; 
 }
 .strength-container {
     display: grid;
@@ -103,7 +110,7 @@ body {
 }
 .progress-bar {  /* this is initial!*/
     height: 100%;
-    width: 50%;
+    width: 30%;
     border-radius: 5px;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -123,6 +130,7 @@ body {
     gap: 10px;
     width: 100%;
     font-size: 20px;
+    font-family: "poppins", sans-serif;
     font-weight: 600;
     color: var(--text-color);
     cursor: pointer;
@@ -133,7 +141,7 @@ body {
 .card-features input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    margin: 0 45px 0 90px;
+    margin: 0 40px 0 80px;
     cursor: pointer;
 }
 .card-features input[type="checkbox"]:hover {

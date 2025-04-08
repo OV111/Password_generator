@@ -94,6 +94,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+.strength-label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+}
 .progress-bar {
     width: 50%; 
     height: 20px;

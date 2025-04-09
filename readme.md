@@ -18,3 +18,4 @@ A sleek, responsive, and fully customizable password generator built using HTML,
 ```
 
 ## 📸 Preview
+![Image](https://github.com/user-attachments/assets/2fb0a594-fa72-4f76-b1f0-b4dd85f6db2d)
